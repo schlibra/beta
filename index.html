@@ -13,15 +13,15 @@
   </head>
   <body>
 	<div class="table">
-	  <table border=1 width=100%>
+	  <table border=0 width=100%>
 		<tbody>
 		  <tr>
-			<td><h1>星辰工作室</h1></td>
-			<td id="home" class="active" onclick="dh(this.id)"><center><h2>首页</h2></center></td>
-			<td id="application" onclick="dh(this.id)"><center><h2>应用</h2></center></td>
-			<td id="article" onclick="dh(this.id)"><center><h2>文章</h2></center></td>
-			<td id="other" onclick="dh(this.id)"><center><h2>工具</h2></center></td>
-			<td id="catchus" onclick="dh(this.id)"><center><h2>联系我们</h2></center></td>
+			<td><a class="dh_text">星辰工作室</a></td>
+			<td id="home" class="active" onclick="dh(this.id)" onmousedown="on_down(this.id)" onmousemove="on_move(this.id)"><center><a class="dh_text">首页</a></center></td>
+			<td id="application" onclick="dh(this.id)" onmousedown="on_down(this.id)" onmousemove="on_move(this.id)"><center><a class="dh_text">应用</a></center></td>
+			<td id="article" onclick="dh(this.id)"><center><a class="dh_text" onmousedown="on_down(this.id)" onmousemove="on_move(this.id)">文章</a></center></td>
+			<td id="other" onclick="dh(this.id)"><center><a class="dh_text" onmousemove="on_down(this.id)" onmousemove="on_move(this.id)">工具</a></center></td>
+			<td id="catchus" onclick="dh(this.id)"><center><a class="dh_text" onmousedown="on_down(this.id)" onmousemove="on_move(this.id)">联系我们</a></center></td>
 		  </tr>
 		</tbody>
 	  </table>
