@@ -13,43 +13,51 @@
   </head>
   <body>
 	<div class="table">
-	  <table border=0 width=100%>
+	  <table border=1 width=100%>
 		<tbody>
 		  <tr>
-			<td><a class="dh_text">星辰工作室</a></td>
-			<td id="home" class="active" onclick="dh(this.id)" onmousedown="on_down(this.id)" onmousemove="on_move(this.id)"><center><a class="dh_text">首页</a></center></td>
-			<td id="application" onclick="dh(this.id)" onmousedown="on_down(this.id)" onmousemove="on_move(this.id)"><center><a class="dh_text">应用</a></center></td>
-			<td id="article" onclick="dh(this.id)"><center><a class="dh_text" onmousedown="on_down(this.id)" onmousemove="on_move(this.id)">文章</a></center></td>
-			<td id="other" onclick="dh(this.id)"><center><a class="dh_text" onmousemove="on_down(this.id)" onmousemove="on_move(this.id)">工具</a></center></td>
-			<td id="catchus" onclick="dh(this.id)"><center><a class="dh_text" onmousedown="on_down(this.id)" onmousemove="on_move(this.id)">联系我们</a></center></td>
+			<td id="home" class="active" onclick="dh(this.id)"><center><a class="dh_text">首页</a></center></td>
+			<td id="application" onclick="dh(this.id)"><center><a class="dh_text">应用</a></center></td>
+			<td id="article" onclick="dh(this.id)"><center><a class="dh_text">文章</a></center></td>
+			<td id="other" onclick="dh(this.id)"><center><a class="dh_text">工具</a></center></td>
+			<td id="catchus" onclick="dh(this.id)"><center><a class="dh_text">联系我们</a></center></td>
 		  </tr>
 		</tbody>
 	  </table>
+	</div>
+	<div style="background-color:Gray;color:White">
+	  <h4 id="wz">当前位置:<button onclick="test()">首页</button></h4>
 	</div>
 	<div id="home_page" class="active_page">
 	  <h1>星辰工作室</h1>
 	  <p>星辰工作室，由一些APP Inventor2爱好者组成，如果你也对此有兴趣，你也可以加入我们工作室！</p>
 	  <img src="https://xhfs2.oss-cn-hangzhou.aliyuncs.com/CA102001/089c3199777849e4bd5d522a5e93ea70.png" width=100%>
-	</div>
+	<br><br><br><br>
+	  <div>
+		<center>
+		  <label class="zs_shadow" onclick="self.location.href=('https://www.xcgzs.ml/zanshang')"><h3>赞赏</h3></label>
+		</center>
+	  </div>
+	 </div>
 	<div id="application_page" class="normal_page">
 	  <h1>工作室应用</h1>
 	  <ul>
 		<li><h2>安卓应用:</h2></li>
 		<ul>
-		  <li><h3>Fruit水果配对</h3></li>
-		  <li><h3>计算器</h3></li>
+		  <li><h3 class="url" onclick="window.location.href=('https://www.xcgzs.ml/application/Fruit')">Fruit水果配对</h3></li>
+		  <li><h3 class="url" onclick="window.location.href=('https://www.xcgzs.ml/application/jsq')">计算器</h3></li>
 		</ul>
 		<li><h2>html小程序:</h2></li>
 		<ul>
-		  <li><h3>猜数字</h3></li>
-		  <li><h3>计算器</h3></li>
+		  <li><h3 class="url" onclick="window.location.href=('https://html.xcgzs.ml/csz')">猜数字</h3></li>
+		  <li><h3 class="url" onclick="window.location.href=('https://html.xcgzs.ml/jsq')">计算器</h3></li>
 		</ul>
 	  </ul>
 	</div>
 	<div id="article_page" class="normal_page">
 	  <h1>文章:</h1>
 	  <ul>
-		<li><h2>二级分类标题</h2></li>
+		<li><h2>教程</h2></li>
 		<ul>
 		  <li><h3>怎样编写aix</h3></li>
 		</ul>
@@ -83,6 +91,7 @@
 		</ul>
 	  </ul>
 	</div>
+	<iframe src="https://www.xcgzs.ml" frameborder=0 class="i_kj"></iframe>
 	<script src="/js/script.js"></script>
   </body>
 </html>
